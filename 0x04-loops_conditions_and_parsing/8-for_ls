@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-# Creates a SSH RSA key pair
+# for ls; displaying the contents of the current directory
+
+for i in *; do basename "$i" | cut -d '-' -f 2; done
