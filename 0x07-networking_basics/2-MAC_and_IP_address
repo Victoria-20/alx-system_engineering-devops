@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-# Defines the OSI model and how it is organised
+# Defferentiates between a MAC address and an IP address
+
+2
+3
