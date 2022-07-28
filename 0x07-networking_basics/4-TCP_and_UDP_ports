@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
-# Defines the OSI model and how it is organised
+# TCP and UDP ports - listening ports, PID and name of the program
+# to which each socket belongs
+
+netstat -lp
+
