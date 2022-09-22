@@ -1,1 +1,9 @@
 #!/usr/bin/env bash
+# Contains the custom 404 page
+sudo apt-get update
+sudo apt-get -y install nginx
+
+echo "Ceci n'est pas une page" >> /var/www/html/error_404.html
+sed -i '39i\error_page 404 /error_404.html;' /etc/nginx/sites-available/default
+
+service nginx start
