@@ -1,0 +1,10 @@
+server {
+    listen 80;
+    server_name 34.204.166.252;
+    add_header X-Served-By 16742-web-01;
+
+    location /airbnb-onepage/ {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/web_flask/web_flask.sock;
+    }
+}
